@@ -15,12 +15,13 @@
 
 x = 0
 y = 0
+import math
 sum = int(input("Введите сумму загаданных чисел: "))
 prod = int(input("Введите произведение загаданных чисел: "))
 diskr = sum ** 2 - 4 * prod
 print(diskr)
 if diskr >= 0:
-    x = (sum - ((sum ** 2 - 4 * prod) ** 0.5)) / 2
-    y = (sum + ((sum ** 2 - 4 * prod) ** 0.5)) / 2
+    x = (sum - math.sqrt(sum ** 2 - 4 * prod)) / 2
+    y = (sum + math.sqrt(sum ** 2 - 4 * prod)) / 2
 print(f"Загаданные числа равны x = {x}, y = {y}")
 
