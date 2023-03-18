@@ -12,14 +12,19 @@
 # ```(*)``` **Усложнение.** При выводе результата на экран воспользуйтесь тернарным оператором.
 
 
-num = int(input("Введите число от 1 до 10: "))
-list = [1, 2, 3, 4, 5, 4, 3, 4, 5, 6]
-print(list)
+num = int(input("Введите число: "))
+list = [1, 2, 5, 4, 5, 4, 3, 4, 5, 6]
 count = 0
-for i in list:
-    if num == i:
+for idx in list:
+    if num == idx:
         count += 1
-if count == 0:
-    print(-1)
-else:
-    print(f"Число {num} встречается в списке {count} раз.")
+print(count) if count !=0 else print(-1)
+
+
+# for i in list:
+#     if num == i:
+#         count += 1
+# if count == 0:
+#     print(-1)
+# else:
+#     print(count)
