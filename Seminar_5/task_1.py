@@ -10,4 +10,4 @@ def exponentiation(a, b):
     if b != 1: return (a * exponentiation(a, b - 1))
 first_num = int(input("Введите число: "))
 second_num = int(input("В какую степень вы хотите возвести введённое число?: "))
-print(exponentiation(first_num, second_num))
+print(f"Результат возведения числа {first_num} в {second_num} степень = {exponentiation(first_num, second_num)}")
